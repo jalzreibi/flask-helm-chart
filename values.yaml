@@ -1,0 +1,32 @@
+# Default values for flask-helm-chart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+
+# Number of flask pods to be created
+replicaCount: 1
+
+
+# Flask app image 
+image: 
+  repository: public.ecr.aws/p8i8m7y7/techspot-cloud/public/flask-app
+  tag: "1.0.0"
+
+
+# port exposing the flask endpoints through a NodePort service
+nodePort:
+  port: 32000
+
+
+# secrets needed fpr the proper functionning of the chart. If no value provided, the secrets will be randomized
+secrets:
+  mysql_root_password:
+  mysql_user:
+  mysql_db_name:
+  mysql_db_password:
+
+
+# Persistent storage iclaim used to store the mysql pod data. If none is provided, no persistent storage is used, and the mysql data will be wiped after pod loss or destruction
+persistence:
+  pvc:
+    claim:

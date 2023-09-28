@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ .Release.Name }}-flask-app-deployment
+  labels:
+    app: {{ .Release.Name }}-flask-app
+    app.kubernetes.io/managed-by: {{ .Release.Service }}
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: {{ .Release.Name }}-flask-app
+  template:
+    metadata:
+      labels:
+        app: {{ .Release.Name }}-flask-app
+        app.kubernetes.io/managed-by: {{ .Release.Service }}
+    spec:
+      containers:
+      - name: flask-app
+        image: {{ .Values.image.repository }}:{{ .Values.image.tag }}
+        env:
+        - name: DB_NAME
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-mysql-db-name
+              key: MYSQL_DATABASE
+        - name: DB_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-mysql-user-password
+              key: MYSQL_PASSWORD
+        - name: DB_HOST
+          value: {{ .Release.Name }}-mysql-service
+        - name: DB_USER
+          valueFrom:
+            secretKeyRef:
+              name: {{ .Release.Name }}-mysql-db-user
+              key: MYSQL_USER
