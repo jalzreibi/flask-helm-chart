@@ -1,0 +1,32 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+apiVersion: v2
+appVersion: 1.0.0
+description: A Helm chart for Kubernetes that deploys a flask app and a mysql container
+maintainers:
+- - email: jean@techspot.cloud
+  name: Jean Al Zreibi
+name: flask-helm-chart
+type: application
+version: 0.1.0
+
+...
+files:
+  flask-helm-chart-0.1.0.tgz: sha256:e67e2cedb4acbca6720a46d96daae05a4bc6600a7578cc53f4eb3bbd3653ce30
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJlFp/aCRCqLCn1yRENUgAA6vAQAIXNwaH6XuIflSq2SnRru/aD
+M4h0hl1S2DeNZZKifflELf5DAWs79dJe8sg2HFne1fZBwBwYxirbAUcS4tsvOuCZ
+9II/U7R0BxdhBQ4xOHNCkDMMjNARVqxld4478s5XFjiZrKf7GOMVlQgKW/46hmrn
+ByZTeISnUyhhXuiQ5mR3vh0LvAHbmw6NdCaXBPRlHpgU2GG0vIpfc1I7JV2qj09X
+TsmivGx3a/DCDAEGSzDkyf42H1/DrpMs9Frt3w/LAIbgGIiPShNew3qv+k5ZBDvA
+8mWbpKGaKoPxG9ru4HVIxDSpJuPnEoc3DVEpqhiXSkqVts5usRS8CYAtG/XUPzdN
+FGUu5++6HXwoyXCzvM+/o9I/r/vG6vRB71eMoLAB34cXCciR5qVYCq3ZT9fT55EA
+3zSVTnbh4jX5aRXyWgqCvnlMFsiFZee7jWQCnZlUTChwFhnkYSkTFqmNH/67jD1v
+efwm4NTGr0/bFaancmWlvv+EhNxszGZ64dIpKf0i08/tKXIlunmos21S16mEv/7C
+bfaNnF37rtu7Kjcw5Zz/2AsGXAA67To+sXur2aoCfKAXLd0A+jitcqbxVaHFsti5
+dj1di9Z9ShgOhPqSX7CV78Usdw0oHkw3I0aJp2nlVSepk/MOUFslgjCw+dypVaDV
+MW21MLU1P2a5cEWUQMEZ
+=Y2nK
+-----END PGP SIGNATURE-----

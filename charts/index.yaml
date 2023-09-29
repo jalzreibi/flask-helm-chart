@@ -1,0 +1,18 @@
+apiVersion: v1
+entries:
+  flask-helm-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-09-29T09:59:00.816905647Z"
+    description: A Helm chart for Kubernetes that deploys a flask app and a mysql
+      container
+    digest: e67e2cedb4acbca6720a46d96daae05a4bc6600a7578cc53f4eb3bbd3653ce30
+    maintainers:
+    - email: jean@techspot.cloud
+      name: Jean Al Zreibi
+    name: flask-helm-chart
+    type: application
+    urls:
+    - https://jalzreibi.github.io/flask-helm-chart/flask-helm-chart-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-09-29T09:59:00.815603333Z"
